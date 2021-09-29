@@ -1,17 +1,23 @@
-console.log("Hello!");
+// console.log("Hello!");
 
-const msg = "this is a message";
+// const msg = "this is a message";
 
-console.log(msg);
+// console.log(msg);
 
-console.log(`%c` + msg, `color: green`);
+// console.log(`%c` + msg, `color: green`);
 
-const name = "c";
-const sname = "c";
-const place = "uk";
-const horo = "scoripio";
+// const name = "c";
+// const sname = "c";
+// const place = "uk";
+// const horo = "scoripio";
 
-console.log(`%c` + name + sname + place + horo, `color: orange`);
-console.log(`%c` + sname, `font:fantasy`);
-console.log(`%c` + place, `font-weight: bold`);
-console.log(`%c` + horo, `background-color: black; color: orange; padding: 10px`);
+// console.log(`%c` + name + sname + place + horo, `color: orange`);
+// console.log(`%c` + sname, `font:fantasy`);
+// console.log(`%c` + place, `font-weight: bold`);
+// console.log(`%c` + horo, `background-color: black; color: orange; padding: 10px`);
+
+let totalMoney = 4000;
+let moneyPaidSoFar = 2348;
+let totalLeftToPay;
+
+console.log(`The total bill is ${totalMoney} the remaining amount of money to be paid is ${totalMoney-moneyPaidSoFar}`)
