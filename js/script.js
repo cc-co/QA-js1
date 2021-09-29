@@ -1,17 +1,26 @@
-console.log("Hello!");
+// Objects, arrays and JSON
 
-const msg = "this is a message";
+let vehicle = {
+    "type": "car",
+    "seats":"5",
+    "wheels" : 4
+};
 
-console.log(msg);
+// JSON
 
-console.log(`%c` + msg, `color: green`);
+// array exercise
+//1.
 
-const name = "c";
-const sname = "c";
-const place = "uk";
-const horo = "scoripio";
+let myArray = ["hello", "everyone"];
 
-console.log(`%c` + name + sname + place + horo, `color: orange`);
-console.log(`%c` + sname, `font:fantasy`);
-console.log(`%c` + place, `font-weight: bold`);
-console.log(`%c` + horo, `background-color: black; color: orange; padding: 10px`);
+console.log(myArray.length);
+
+myArray.push("1","2","3");
+
+console.log(myArray.length);
+
+myArray.shift();
+
+for(let i of myArray){
+    console.log(i);
+};
