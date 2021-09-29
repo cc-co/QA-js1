@@ -1,17 +1,21 @@
-console.log("Hello!");
+// Scope and functions
 
-const msg = "this is a message";
+// local (inside the block)
+// global (outside the block)
+// if none exist, add to global scope
 
-console.log(msg);
+func1 = (num1, num2) => {
+    return num1 - num2;
+};
 
-console.log(`%c` + msg, `color: green`);
+let welcome = function(name, age){
+    console.log(`My name is ${name}, and I am ${age} years old`)
+};
 
-const name = "c";
-const sname = "c";
-const place = "uk";
-const horo = "scoripio";
+powerUp = (n1,n2) => {
+    return Math.pow(n1,n2); 
+};
 
-console.log(`%c` + name + sname + place + horo, `color: orange`);
-console.log(`%c` + sname, `font:fantasy`);
-console.log(`%c` + place, `font-weight: bold`);
-console.log(`%c` + horo, `background-color: black; color: orange; padding: 10px`);
+console.log(func1(5,1));
+welcome("me", 99);
+console.log(powerUp(8,2));
