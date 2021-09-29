@@ -1,17 +1,25 @@
-console.log("Hello!");
+// conditionals
 
-const msg = "this is a message";
+// falsey
 
-console.log(msg);
+let falseOne = 0;
+let falseTwo = ``;
+let falseThree;
+let falseFour = null;
+let falseFive = NaN;
+let falseSix = false;
 
-console.log(`%c` + msg, `color: green`);
 
-const name = "c";
-const sname = "c";
-const place = "uk";
-const horo = "scoripio";
 
-console.log(`%c` + name + sname + place + horo, `color: orange`);
-console.log(`%c` + sname, `font:fantasy`);
-console.log(`%c` + place, `font-weight: bold`);
-console.log(`%c` + horo, `background-color: black; color: orange; padding: 10px`);
+let age;
+age = 16;
+
+if(age > 18 && age<65){
+    console.log(`${age} is in between 18 - 65`)
+}else if(age<18){
+    console.log(`${age} is underage`)
+}else{
+    console.log(`${age} is over 65`)
+};
+
+(age<50)? console.log(`${age} is under 50`) : console.log(`${age} is over 50`);
