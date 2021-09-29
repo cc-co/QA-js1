@@ -1,17 +1,83 @@
-console.log("Hello!");
+//ASI
 
-const msg = "this is a message";
+//Task 1 flow chart
 
-console.log(msg);
+let A =100;
 
-console.log(`%c` + msg, `color: green`);
+while(A<200){
+    console.log(A)
+    A++;
+}; 
 
-const name = "c";
-const sname = "c";
-const place = "uk";
-const horo = "scoripio";
+//flow chart 2
 
-console.log(`%c` + name + sname + place + horo, `color: orange`);
-console.log(`%c` + sname, `font:fantasy`);
-console.log(`%c` + place, `font-weight: bold`);
-console.log(`%c` + horo, `background-color: black; color: orange; padding: 10px`);
+let a = 100;
+
+while(a<200){
+    if(a%2 == 0){
+        console.log("-");
+        a++;
+    }else{
+        console.log("*");
+        a++;
+    }
+
+
+};
+
+//2.
+
+// for(let i=0; i<10; i++){
+//     for(let j=1; j<11; j++){
+//         console.log(j);
+//     }
+// };
+
+for(let x=1;x<11;x++){
+    for(let y=0;y<10;y++){
+        console.log(x)
+    }
+};
+
+//3. Replace while with for
+
+for(let AA =100; AA<200; AA++){
+    console.log(AA)
+}; 
+
+for(let aa=100; aa<200; aa++){
+    if(aa%2 == 0){
+        console.log("-");
+    }else{
+        console.log("*");
+    }
+};
+
+//4. switch
+
+let current_day = "saturday";
+
+switch(current_day){
+    case "monday":
+        console.log("it's Monday");
+    case "tuesday":
+        console.log("it's Tuesday");
+    case "wednesday":
+        console.log("it's Wednesday");
+    case "thursday":
+        console.log("it's Thursday");
+    case "friday":
+        console.log("it's Friday");
+        break;
+    case "saturday":
+        console.log("it's Saturday");
+        break;
+    case "sunday":
+        console.log("it's Sunday");
+        break;
+    default:
+        console.warn(`no valid day`); 
+        break;    
+}
+
+// console.log(Date.now())
